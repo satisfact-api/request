@@ -1,0 +1,43 @@
+{
+  "name": "@satisfact-api/request",
+  "version": "1.0.0",
+  "description": "Minimalistic HTTP library.",
+  "main": "src/request.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "lint": "eslint .",
+    "test:coverage": "NODE_V8_COVERAGE=coverage c8 -r html node --test"
+  },
+  "author": "Julien 'Shudrum' Martin",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "c8": "^8.0.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "nock": "^13.3.8"
+  },
+  "eslintConfig": {
+    "env": {
+      "es2021": true,
+      "node": true
+    },
+    "extends": "airbnb-base",
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "rules": {
+      "import/extensions": [
+        "error",
+        {
+          "js": "always",
+          "json": "always"
+        }
+      ]
+    }
+  }
+}
